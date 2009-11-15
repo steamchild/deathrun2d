@@ -1,9 +1,9 @@
 local CLASS = {}  
   
 CLASS.DisplayName           = "Runner"
-CLASS.WalkSpeed             = 250
-CLASS.CrouchedWalkSpeed     = 0.2
-CLASS.RunSpeed              = 350
+CLASS.WalkSpeed             = 350
+CLASS.CrouchedWalkSpeed     = 0.4
+CLASS.RunSpeed              = 250
 CLASS.DuckSpeed             = 0.4
 CLASS.JumpPower             = 175
 CLASS.DrawTeamRing          = true

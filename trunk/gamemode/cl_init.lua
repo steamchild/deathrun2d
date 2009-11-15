@@ -1,66 +1,16 @@
 include( 'shared.lua' )
 include( "overv_chataddtext.lua" )
 
+gui.EnableScreenClicker( true )
 
-function GM:PositionScoreboard( ScoreBoard )
-	ScoreBoard:SetSize( 700, ScrH() - 100 )
-	ScoreBoard:SetPos( (ScrW() - ScoreBoard:GetWide()) / 2, 50 )
-
-end
-
-local AIMDISTtodyna = 100
-
-function GM:CreateMove( cmd )
-
-	local ang = cmd:GetViewAngles()
-	ang.y = 0
-	
-	cmd:SetUpMove( 0 )
-	cmd:SetSideMove( 0 )
-	cmd:SetViewAngles( ang )
-	
-	AIMDISTtodyna = math.Clamp( AIMDISTtodyna - cmd:GetMouseY() / 5, 25, 2100 )
-	
-end
-
-function GM:DrawCrosshair( )
-	if not LocalPlayer():Alive() then return end
-
-	local pos = LocalPlayer():GetShootPos() + LocalPlayer():GetAimVector() * 64
-	local toscreen = pos:ToScreen()
-	
-	self:BiltCrosshair( toscreen, 4, 2 )
-	
-	local hittraceres = util.TraceLine( util.GetPlayerTrace( LocalPlayer() ) )
-	local toscreenhit = hittraceres.HitPos:ToScreen()
-	self:BiltCrosshair( toscreenhit, 8, 2 )
-	
-end
-
-function GM:BiltCrosshair( toscreenData, length, thick )
-	surface.SetDrawColor( 255, 220, 0, 255 )
-	surface.DrawRect(toscreenData.x - length/2, toscreenData.y - thick/2 , length, thick  )
-	surface.DrawRect(toscreenData.x - thick/2 , toscreenData.y - length/2,  thick, length )
-end
-
-function GM:HUDPaint()
-	self.BaseClass:HUDPaint()
-	
-	self:DrawCrosshair()
-end
-
-local calcmark = {}
-calcmark.x = 0
-calcmark.y = 0
-calcmark.z = 0
-local viewmark = {}
-viewmark.x = 0
-viewmark.y = 0
-viewmark.z = 0
+local calcmark = Vector(0,0,0)
+local viewmark = Vector(0,0,0)
 local ratemark = {}
 ratemark.x = 0.4
 ratemark.y = 0.4
 ratemark.z = 0.8
+local velomark = Vector(0,0,0)
+velorate = 0.4
 
 local calccamdist_input = {}
 calccamdist_input.mask = SOLID_BRUSHONLY
@@ -83,17 +33,23 @@ function GM:CalcView( ply, origin, angle, fov )
 	calccamdist_output = util.TraceLine( calccamdist_input )
 	
 	local distance = (calccamdist_input.startpos - calccamdist_output.HitPos):Length() * 0.9
-
+	local velocity = ply:Alive() and ply:GetVelocity() or Vector(0,0,0)
+	velocity = math.Clamp(velocity:Length(), 0, 128) * velocity:Normalize() * 3
+	
+	velomark.x = velomark.x + (velocity.x - velomark.x) * math.Clamp( velorate * 5 * FrameTime() , 0 , 1 )
+	velomark.y = velomark.y + (velocity.y - velomark.y) * math.Clamp( velorate * 5 * FrameTime() , 0 , 1 )
+	velomark.z = velomark.z + (velocity.z - velomark.z) * math.Clamp( velorate * 5 * FrameTime() , 0 , 1 )
+	
 	if not ply:Alive() then
 	
 		local corpse = LocalPlayer():GetRagdollEntity()
 		view.angles = aim
 		
 		if corpse and corpse:IsValid() then
-			view.origin = corpse:GetPos()
+			view.origin = corpse:GetPos() + velomark
 			calcmark.y = view.origin.y - distance
 		else
-			view.origin = ply:GetPos()
+			view.origin = ply:GetPos() + velomark
 			calcmark.y = view.origin.y - distance
 		end
 		
@@ -102,7 +58,7 @@ function GM:CalcView( ply, origin, angle, fov )
 	else
 		view.angles = aim
 	
-		view.origin = ply:GetPos()
+		view.origin = ply:GetPos() + velomark
 		calcmark.x = view.origin.x
 		calcmark.y = view.origin.y - distance
 		calcmark.z = view.origin.z + 32
@@ -118,6 +74,170 @@ function GM:CalcView( ply, origin, angle, fov )
 	view.origin.z = viewmark.z
 	
 	return view
+
+end
+
+function GM:CreateMove( cmd )
+	local vpos = LocalPlayer():GetShootPos()
+
+	local ppos = vpos:ToScreen()
+	ppos = Vector( ppos.x, ppos.y, 0 )
+	local mpos = Vector( gui.MouseX(), gui.MouseY(), 0 )
+
+	local aim = (mpos - ppos):Angle()
+
+	local ang = Angle(0,0,0)
+
+	if (mpos.x < ppos.x) then
+		aim:RotateAroundAxis(Vector(0,0,1),180)
+		ang.p = -aim.y
+		ang.y = 180;
+		cmd:SetForwardMove( -cmd:GetSideMove() )
+		
+	else
+		ang.p = aim.y
+		ang.y = 0;
+		cmd:SetForwardMove( cmd:GetSideMove() )
+		
+	end
+	
+	cmd:SetViewAngles( ang )
+	cmd:SetSideMove( 0 )
+	cmd:SetUpMove( 0 )
+end
+
+function GM:GUIMousePressed( mousecode )
+	if (mousecode == MOUSE_LEFT) then
+		RunConsoleCommand("+attack")
+	elseif (mousecode == MOUSE_RIGHT) then
+		RunConsoleCommand("+attack2")
+	elseif (mousecode == MOUSE_MIDDLE) then
+		RunConsoleCommand("lastinv")
+	elseif (mousecode == MOUSE_4) then
+		RunConsoleCommand("+voicerecord")
+	elseif (mousecode == MOUSE_5) then
+		RunConsoleCommand("+voicerecord")
+	end
+end
+
+function GM:GUIMouseReleased( mousecode )
+	if (mousecode == MOUSE_LEFT) then
+		RunConsoleCommand("-attack")
+	elseif (mousecode == MOUSE_RIGHT) then
+		RunConsoleCommand("-attack2")
+	elseif (mousecode == MOUSE_4) then
+		RunConsoleCommand("-voicerecord")
+	elseif (mousecode == MOUSE_5) then
+		RunConsoleCommand("-voicerecord")
+	end
+end
+
+/*
+function GM:PlayerBindPress( ply, bind, pressed )
+	if string.find( bind , "forward" ) then
+		if pressed then
+			RunConsoleCommand( "+jump" )
+		else
+			RunConsoleCommand( "-jump" )
+		end
+		return false
+	end
+	
+	if string.find( bind , "back" ) then
+		if pressed then
+			RunConsoleCommand( "+duck" )
+		else
+			RunConsoleCommand( "-duck" )
+		end
+		return false
+	end
+end
+*/
+
+/*
+function GM:CreateMove( cmd )
+
+	local ang = cmd:GetViewAngles()
+	ang.y = 0
+	
+	cmd:SetUpMove( 0 )
+	cmd:SetSideMove( 0 )
+	cmd:SetViewAngles( ang )
+	
+	AIMDISTtodyna = math.Clamp( AIMDISTtodyna - cmd:GetMouseY() / 5, 25, 2100 )
+	
+end
+*/
+
+function GM:PositionScoreboard( ScoreBoard )
+	ScoreBoard:SetSize( 700, ScrH() - 100 )
+	ScoreBoard:SetPos( (ScrW() - ScoreBoard:GetWide()) / 2, 50 )
+
+end
+
+function GM:DrawCrosshair( )
+
+	self:BiltCrosshair( gui.MouseX(), gui.MouseY(), 10, 4, 0, 0, 0, 192 )
+	self:BiltCrosshair( gui.MouseX(), gui.MouseY(), 6, 6, 0, 0, 0, 192 )
+	
+	self:BiltCrosshair( gui.MouseX(), gui.MouseY(), 8, 2, 255, 255, 255, 255 )
+	self:BiltCrosshair( gui.MouseX(), gui.MouseY(), 4, 4, 255, 255, 255, 255 )
+
+	if LocalPlayer():Alive() then
+		local pos = LocalPlayer():GetShootPos() + LocalPlayer():GetAimVector() * 64
+		local toscreen = pos:ToScreen()
+		self:BiltCrosshair( toscreen.x, toscreen.y, 4, 2 )
+		
+		local hittraceres = util.TraceLine( util.GetPlayerTrace( LocalPlayer() ) )
+		local toscreenhit = hittraceres.HitPos:ToScreen()
+		self:BiltCrosshair( toscreenhit.x, toscreenhit.y, 8, 2 )
+		
+	end
+	
+end
+
+function GM:BiltCrosshair( screenx, screeny, length, thick , oR, oG, oB, oA)
+	surface.SetDrawColor( oR or 255, oG or 220, oB or 0, oA or 255 )
+	surface.DrawRect(screenx - length/2, screeny - thick/2 , length, thick  )
+	if (length != thick) then
+		surface.DrawRect(screenx - thick/2 , screeny - length/2,  thick, length )
+	end
+end
+
+function GM:HUDPaint()
+	self.BaseClass:HUDPaint()
+	
+	self:DrawCrosshair()
+end
+
+local CircleMat = Material( "SGM/playercircle" )
+
+function GM:DrawPlayerRing( pPlayer )
+
+	if ( !IsValid( pPlayer ) ) then return end
+	if ( !pPlayer:GetNWBool( "DrawRing", false ) ) then return end
+	if ( !pPlayer:Alive() ) then return end
+	
+	local trace = {}
+	trace.start 	= pPlayer:GetPos()
+	trace.start.z   = trace.start.z + 32/3
+	trace.endpos 	= pPlayer:GetPos()
+	trace.endpos.z  = trace.endpos.z + 32/3
+	trace.endpos.y  = trace.endpos.y + 1024
+	//trace.filter 	= pPlayer
+	trace.mask 	    = PLAYERSOLID_BRUSHONLY
+	
+	local tr = util.TraceLine( trace )
+	
+	if not tr.HitWorld then
+		tr.HitPos = pPlayer:GetPos()
+	end
+
+	local color = table.Copy( team.GetColor( pPlayer:Team() ) )
+	color.a = 40;
+
+	render.SetMaterial( CircleMat )
+	render.DrawQuadEasy( tr.HitPos + tr.HitNormal, tr.HitNormal, GAMEMODE.PlayerRingSize, GAMEMODE.PlayerRingSize, color )	
 
 end
 

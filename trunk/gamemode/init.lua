@@ -36,7 +36,7 @@ function GM:Think()
 end
 
 function GM:PlayerDeathSound( )
-	return false
+	return true
 end
 
 function GM:PlayerDeath( victim )
