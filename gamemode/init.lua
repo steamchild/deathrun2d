@@ -7,7 +7,6 @@ include( "shared.lua" )
 include( "tables.lua" )
 include( "overv_chataddtext.lua" )
 
-
 function GM:OnRoundStart( num )
 	UTIL_UnFreezeAllPlayers()
 	
@@ -27,18 +26,69 @@ end
 
 function GM:RoundTimerEnd()
 	if ( !GAMEMODE:InRound() ) then return end
-	//GAMEMODE:RoundEndWithResult( ROUND_RESULT_DRAW )
+	GAMEMODE:RoundEndWithResult( ROUND_RESULT_DRAW )
 
+end
+
+function GM:InitPostEntity()
+	if not self.Data.DrawRunner then self.Data.DrawRunner = {} end
+	if not self.Data.DrawKiller then self.Data.DrawKiller = {} end
+	
+	self.Data.DrawRunner = table.Copy( ents.FindByName("DR2D_RUNNER_*") )
+	self.Data.DrawKiller = table.Copy( ents.FindByName("DR2D_KILLER_*") )
+end
+
+function GM:PlayerInitialSpawn( ply )
+	umsg.Start("PartialBrushList", ply)
+		umsg.Short( #self.Data.DrawRunner )
+		umsg.Short( #self.Data.DrawKiller )
+		for k,ent in pairs(self.Data.DrawRunner) do
+			umsg.Entity(ent)
+		end
+		for k,ent in pairs(self.Data.DrawKiller) do
+			umsg.Entity(ent)
+		end
+	umsg.End()
+end
+
+function GM:StartRoundBasedGame( )
+	self.BaseClass:StartRoundBasedGame()
+	local rp = RecipientFilter()
+	rp:AddAllPlayers()
+	
+	umsg.Start("PartialBrushList", rp)
+		umsg.Short( #self.Data.DrawRunner )
+		umsg.Short( #self.Data.DrawKiller )
+		for k,ent in pairs(self.Data.DrawRunner) do
+			umsg.Entity(ent)
+		end
+		for k,ent in pairs(self.Data.DrawKiller) do
+			umsg.Entity(ent)
+		end
+	umsg.End()
 end
 
 function GM:Think()
 
 end
 
+function GM:SetDeathSound( teamDiscrim, deathSound )
+	if not self.Data.DeathSounds then self.Data.DeathSounds = {} end
+	if deathSound != "" then resource.AddFile("sound/" .. deathSound) end
+
+	self.Data.DeathSounds[teamDiscrim] = deathSound or ""
+	
+	print("Death Sound : ", teamDiscrim, deathSound )
+end
+
 function GM:PlayerDeathSound( )
-	return true
+	return (self.Data.DeathSounds != nil)
 end
 
 function GM:PlayerDeath( victim )
-	victim:EmitSound("../../../common/left 4 dead 2 demo/left4dead2/sound/music/undeath/death.wav")
+	print("Trying to play death sound (", victim:Team(), "): ", self.Data.DeathSounds[victim:Team()])
+	if self.Data.DeathSounds and self.Data.DeathSounds[victim:Team()] and self.Data.DeathSounds[victim:Team()] != "" then
+		victim:EmitSound( self.Data.DeathSounds[victim:Team()] )
+	end
+	//victim:EmitSound("../../../common/left 4 dead 2 demo/left4dead2/sound/music/undeath/death.wav")
 end

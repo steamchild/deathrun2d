@@ -1,0 +1,8 @@
+@include "base.fgd"
+
+@PointClass size(-4 -4 -4, 4 4 4) = gmod_dr2d_data :
+	"Sets up data DeathRun 2D may need."
+[
+	deathsound_runner(sound) : "Runner Death Sound" : "physics/flesh/flesh_bloody_break.wav" : "Runner Death Sound."
+	deathsound_killer(sound) : "Killer Death Sound" : "NPC_MetroPolice.Die" : "Runner Death Sound."
+]

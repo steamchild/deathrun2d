@@ -16,8 +16,10 @@ CLASS.DropWeaponOnDie		= true
 CLASS.TeammateNoCollide 	= true
 CLASS.AvoidPlayers			= false
 
-function CLASS:Loadout( pl )  
-   
+function CLASS:Loadout( pl ) 
+	pl:Give("weapon_crowbar")
+	pl:Give("weapon_pistol")
+	pl:GiveAmmo( 24, "Pistol", true )	
 end
 
 function CLASS:ShouldDrawLocalPlayer( pl )
