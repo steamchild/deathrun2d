@@ -1,0 +1,25 @@
+"Gamemode"
+{
+	"name"		"DeathRun 2D"
+	"version"	"0.0"
+
+	"author_name"	"Hurricaaane"
+	"author_email"	""
+	"author_url"	""
+	
+	"icon"		""
+	"info"		""
+	"hide"		""
+
+	"mappattern"
+	{
+		"1"	"^dr2d_"
+	}
+	
+	"fretta_maps"
+	{
+		"1"	"^dr2d_"
+	}
+	
+	"selectable"	"1"
+}
