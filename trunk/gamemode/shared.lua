@@ -2,6 +2,8 @@ GM.Name     = "DeathRun 2D"
 GM.Author   = "Hurricaaane"  
 GM.Email    = ""  
 GM.Website  = ""  
+
+GM.Data = {}
   
 DeriveGamemode( "fretta" )  
 IncludePlayerClasses()

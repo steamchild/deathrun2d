@@ -1,16 +1,57 @@
 include( 'shared.lua' )
 include( "overv_chataddtext.lua" )
 
+local myTeam = -1
+local myAlive = -1
+
+local function PartialBrushList( m )
+	local numDrawRunner = m:ReadShort()
+	local numDrawKiller = m:ReadShort()
+	
+	print("Receiving PartialBrushList : Got", numDrawRunner, "DrawRunner and", numDrawKiller, "DrawKiller")
+	
+	GAMEMODE.Data.DrawRunner = {}
+	GAMEMODE.Data.DrawKiller = {}
+	
+	for k=1,numDrawRunner do
+		table.insert(GAMEMODE.Data.DrawRunner, m:ReadEntity())
+	end
+	for k=1,numDrawKiller do
+		table.insert(GAMEMODE.Data.DrawKiller, m:ReadEntity())
+	end
+end
+usermessage.Hook( "PartialBrushList", PartialBrushList )
+
+function GM:Think()
+	if (myTeam != LocalPlayer():Team()) or (myAlive != LocalPlayer():Alive()) then
+		myTeam = LocalPlayer():Team()
+		myAlive = LocalPlayer():Alive()
+		
+		if (self.Data.DrawRunner) then
+			for k,ent in pairs(self.Data.DrawRunner) do
+				if ValidEntity(ent) then ent:SetNoDraw( myTeam != TEAM_RUNNERS ) end
+			end
+		end
+		if (self.Data.DrawKiller) then
+			for k,ent in pairs(self.Data.DrawKiller) do
+				if ValidEntity(ent) then ent:SetNoDraw( myTeam != TEAM_KILLERS ) end
+			end
+		end
+		
+	end
+	
+end
+
 gui.EnableScreenClicker( true )
 
 local calcmark = Vector(0,0,0)
 local viewmark = Vector(0,0,0)
 local ratemark = {}
-ratemark.x = 0.4
-ratemark.y = 0.4
+ratemark.x = 0.6
+ratemark.y = 0.6
 ratemark.z = 0.8
 local velomark = Vector(0,0,0)
-velorate = 0.4
+velorate = 0.5
 
 local calccamdist_input = {}
 calccamdist_input.mask = SOLID_BRUSHONLY
