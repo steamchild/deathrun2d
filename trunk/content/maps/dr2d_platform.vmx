@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4715"
-	"mapversion" "35"
+	"mapversion" "36"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,12 +26,12 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "35"
+	"mapversion" "36"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
 	"maxpropscreenwidth" "-1"
-	"skyname" "sky_borealis01_hdr"
+	"skyname" "sky_borealis01"
 	solid
 	{
 		"id" "83"
