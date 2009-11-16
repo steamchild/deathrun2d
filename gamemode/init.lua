@@ -38,8 +38,15 @@ function GM:InitPostEntity()
 	self.Data.DrawKiller = table.Copy( ents.FindByName("DR2D_KILLER_*") )
 end
 
-function GM:PlayerInitialSpawn( ply )
-	umsg.Start("PartialBrushList", ply)
+function GM:UpdatePartialBrushList( plyNet )
+	local rp = nil
+	if not plyNet then
+		rp = RecipientFilter()
+		rp:AddAllPlayers()
+		plyNet = rp
+	end
+
+	umsg.Start("PartialBrushList", plyNet)
 		umsg.Short( #self.Data.DrawRunner )
 		umsg.Short( #self.Data.DrawKiller )
 		for k,ent in pairs(self.Data.DrawRunner) do
@@ -51,21 +58,14 @@ function GM:PlayerInitialSpawn( ply )
 	umsg.End()
 end
 
+function GM:PlayerInitialSpawn( ply )
+	self:UpdatePartialBrushList( ply )
+end
+
 function GM:StartRoundBasedGame( )
 	self.BaseClass:StartRoundBasedGame()
-	local rp = RecipientFilter()
-	rp:AddAllPlayers()
 	
-	umsg.Start("PartialBrushList", rp)
-		umsg.Short( #self.Data.DrawRunner )
-		umsg.Short( #self.Data.DrawKiller )
-		for k,ent in pairs(self.Data.DrawRunner) do
-			umsg.Entity(ent)
-		end
-		for k,ent in pairs(self.Data.DrawKiller) do
-			umsg.Entity(ent)
-		end
-	umsg.End()
+	self:UpdatePartialBrushList( nil )
 end
 
 function GM:Think()
@@ -74,7 +74,7 @@ end
 
 function GM:SetDeathSound( teamDiscrim, deathSound )
 	if not self.Data.DeathSounds then self.Data.DeathSounds = {} end
-	if deathSound != "" then resource.AddFile("sound/" .. deathSound) end
+	//if deathSound != "" then resource.AddFile("sound/" .. deathSound) end
 
 	self.Data.DeathSounds[teamDiscrim] = deathSound or ""
 	
@@ -86,7 +86,6 @@ function GM:PlayerDeathSound( )
 end
 
 function GM:PlayerDeath( victim )
-	print("Trying to play death sound (", victim:Team(), "): ", self.Data.DeathSounds[victim:Team()])
 	if self.Data.DeathSounds and self.Data.DeathSounds[victim:Team()] and self.Data.DeathSounds[victim:Team()] != "" then
 		victim:EmitSound( self.Data.DeathSounds[victim:Team()] )
 	end

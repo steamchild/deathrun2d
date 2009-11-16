@@ -8,7 +8,7 @@ local function PartialBrushList( m )
 	local numDrawRunner = m:ReadShort()
 	local numDrawKiller = m:ReadShort()
 	
-	print("Receiving PartialBrushList : Got", numDrawRunner, "DrawRunner and", numDrawKiller, "DrawKiller")
+	print("Receiving PartialBrushList : Got "..numDrawRunner.." DrawRunner Brushes and "..numDrawKiller.." DrawKiller Brushes.")
 	
 	GAMEMODE.Data.DrawRunner = {}
 	GAMEMODE.Data.DrawKiller = {}
@@ -54,7 +54,9 @@ local velomark = Vector(0,0,0)
 velorate = 0.5
 
 local calccamdist_input = {}
-calccamdist_input.mask = SOLID_BRUSHONLY
+calccamdist_input.mask = 1073741824 - CONTENTS_LADDER
+calccamdist_input.startpos = Vector(0,0,0)
+calccamdist_input.endpos   = Vector(0,0,0)
 
 local calccamdist_output = {}
 
@@ -65,17 +67,18 @@ function GM:CalcView( ply, origin, angle, fov )
 	aim.y = 90
 	aim.r = 0
 	
-	calccamdist_input.startpos = ply:GetPos()
-	calccamdist_input.startpos.z = calccamdist_input.startpos.z + 32
+	calccamdist_input.start = ply:GetPos()
+	calccamdist_input.start.z = calccamdist_input.start.z + 32
 	calccamdist_input.endpos = ply:GetPos()
 	calccamdist_input.endpos.z = calccamdist_input.endpos.z + 32
 	calccamdist_input.endpos.y = calccamdist_input.endpos.y - 1024
 	
 	calccamdist_output = util.TraceLine( calccamdist_input )
 	
-	local distance = (calccamdist_input.startpos - calccamdist_output.HitPos):Length() * 0.9
+	local distance = (calccamdist_input.start - calccamdist_output.HitPos):Length() * 0.9
+	//print("distance is : "..distance)
 	local velocity = ply:Alive() and ply:GetVelocity() or Vector(0,0,0)
-	velocity = math.Clamp(velocity:Length(), 0, 128) * velocity:Normalize() * 3
+	velocity = math.Clamp(velocity:Length(), 0, (distance + 1)/9) * velocity:Normalize() * 3
 	
 	velomark.x = velomark.x + (velocity.x - velomark.x) * math.Clamp( velorate * 5 * FrameTime() , 0 , 1 )
 	velomark.y = velomark.y + (velocity.y - velomark.y) * math.Clamp( velorate * 5 * FrameTime() , 0 , 1 )
@@ -95,7 +98,7 @@ function GM:CalcView( ply, origin, angle, fov )
 		end
 		
 		calcmark.x = view.origin.x
-		calcmark.z = view.origin.z
+		calcmark.z = view.origin.z + 16
 	else
 		view.angles = aim
 	
