@@ -1,11 +1,67 @@
+//////////////////////////////////////////////////
+// DeathRun 2D (by Hurricaaane (Ha3))
+// - Main serverside.
+//////////////////////////////////////////////////
 
 AddCSLuaFile( "cl_init.lua" )
+AddCSLuaFile( "sh_partialbrush.lua" )
+AddCSLuaFile( "sh_datasharing.lua" )
+AddCSLuaFile( "cl_sidescrolling.lua" )
 AddCSLuaFile( "tables.lua" )
 AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "overv_chataddtext.lua" )
 include( "shared.lua" )
 include( "tables.lua" )
 include( "overv_chataddtext.lua" )
+include( "sh_partialbrush.lua" )
+include( "sh_datasharing.lua" )
+
+
+////////////////////
+// Sounds
+////////////////////
+
+function GM:SetDeathSound( teamDiscrim, deathSound )
+	if not self.Data.DeathSounds then self.Data.DeathSounds = {} end
+	
+	if (self.Data.DeathSounds[teamDiscrim] != deathSound) and (deathSound != "") then
+		print("Death Sound : ", teamDiscrim, deathSound )
+		
+		local ext = string.Right(deathSound, 4)
+		
+		if (ext == ".wav") or (ext == ".mp3") then
+			resource.AddFile("sound/" .. deathSound)
+		end
+	end
+
+	self.Data.DeathSounds[teamDiscrim] = deathSound or ""
+end
+
+function GM:PlayerDeathSound( )
+	return (self.Data.DeathSounds != nil)
+end
+
+function GM:PlayerDeath( victim )
+	if self.Data.DeathSounds and self.Data.DeathSounds[victim:Team()] and self.Data.DeathSounds[victim:Team()] != "" then
+		victim:EmitSound( self.Data.DeathSounds[victim:Team()] )
+	end
+	
+	//victim:EmitSound("../../../common/left 4 dead 2 demo/left4dead2/sound/music/undeath/death.wav")
+end
+
+
+////////////////////
+// Misc
+////////////////////
+
+function GM:Think()
+
+end
+
+
+////////////////////
+// Rounds
+////////////////////
 
 function GM:OnRoundStart( num )
 	UTIL_UnFreezeAllPlayers()
@@ -30,64 +86,34 @@ function GM:RoundTimerEnd()
 
 end
 
-function GM:InitPostEntity()
-	if not self.Data.DrawRunner then self.Data.DrawRunner = {} end
-	if not self.Data.DrawKiller then self.Data.DrawKiller = {} end
-	
-	self.Data.DrawRunner = table.Copy( ents.FindByName("DR2D_RUNNER_*") )
-	self.Data.DrawKiller = table.Copy( ents.FindByName("DR2D_KILLER_*") )
-end
-
-function GM:UpdatePartialBrushList( plyNet )
-	local rp = nil
-	if not plyNet then
-		rp = RecipientFilter()
-		rp:AddAllPlayers()
-		plyNet = rp
-	end
-
-	umsg.Start("PartialBrushList", plyNet)
-		umsg.Short( #self.Data.DrawRunner )
-		umsg.Short( #self.Data.DrawKiller )
-		for k,ent in pairs(self.Data.DrawRunner) do
-			umsg.Entity(ent)
-		end
-		for k,ent in pairs(self.Data.DrawKiller) do
-			umsg.Entity(ent)
-		end
-	umsg.End()
+function GM:InitPostEntity( )
+	self:GatherPartialBrushList()
 end
 
 function GM:PlayerInitialSpawn( ply )
 	self:UpdatePartialBrushList( ply )
+	self:UpdateEventSounds( ply )
+end
+
+function GM:PlayerSpawn( ply )
+	if self.Data.FlashlightSpawn and self.Data.FlashlightSpawn != 0 then
+		if (self.Data.FlashlightSpawn == 3) or (self.Data.FlashlightSpawn == ply:Team()) then
+			ply:Flashlight( true )
+		end
+	end
+end
+
+function GM:PlayerSwitchFlashlight( ply )
+	if self.Data.FlashlightSwitch and self.Data.FlashlightSwitch != 0 then
+		if (self.Data.FlashlightSwitch == 3) or (self.Data.FlashlightSwitch == ply:Team()) then
+			return false
+		end
+	end
+	return true
 end
 
 function GM:StartRoundBasedGame( )
 	self.BaseClass:StartRoundBasedGame()
 	
 	self:UpdatePartialBrushList( nil )
-end
-
-function GM:Think()
-
-end
-
-function GM:SetDeathSound( teamDiscrim, deathSound )
-	if not self.Data.DeathSounds then self.Data.DeathSounds = {} end
-	//if deathSound != "" then resource.AddFile("sound/" .. deathSound) end
-
-	self.Data.DeathSounds[teamDiscrim] = deathSound or ""
-	
-	print("Death Sound : ", teamDiscrim, deathSound )
-end
-
-function GM:PlayerDeathSound( )
-	return (self.Data.DeathSounds != nil)
-end
-
-function GM:PlayerDeath( victim )
-	if self.Data.DeathSounds and self.Data.DeathSounds[victim:Team()] and self.Data.DeathSounds[victim:Team()] != "" then
-		victim:EmitSound( self.Data.DeathSounds[victim:Team()] )
-	end
-	//victim:EmitSound("../../../common/left 4 dead 2 demo/left4dead2/sound/music/undeath/death.wav")
 end

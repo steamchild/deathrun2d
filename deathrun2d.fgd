@@ -3,6 +3,24 @@
 @PointClass size(-4 -4 -4, 4 4 4) = gmod_dr2d_data :
 	"Sets up data DeathRun 2D may need."
 [
-	deathsound_runner(sound) : "Runner Death Sound" : "physics/flesh/flesh_bloody_break.wav" : "Runner Death Sound."
-	deathsound_killer(sound) : "Killer Death Sound" : "NPC_MetroPolice.Die" : "Runner Death Sound."
+	deathsound_runner(sound) : "Runner death sound" : "physics/flesh/flesh_bloody_break.wav" : "Runner death sound."
+	deathsound_killer(sound) : "Killer death sound" : "NPC_MetroPolice.Die" : "Runner death sound."
+	winsound_runners(sound) : "Runners winning sound." : "NPC_SScanner.Illuminate" : "Runners winning Sound."
+	winsound_killers(sound) : "Killers winning sound." : "NPC_SScanner.Combat" : "Killers winning Sound."
+	drawsound(sound) : "Draw game sound." : "NPC_CScanner.Alert" : "Draw game sound."
+	timeup(sound) : "Time up sound." : NPC_CScanner.Combat" : "Time up sound."
+	flashlight_on_spawn(choices) : "Flashlight turned on on spawn." : 0 =
+	[
+		0 : "None spawn with flashlight on."
+		1 : "Runners spawn with flashlight on."
+		2 : "Killers spawn with flashlight on."
+		3 : "Both have flashlight on."
+	]
+	flashlight_switch(choices) : "Allow flashlight switch." : 0 =
+	[
+		0 : "No flashlight restrictions."
+		1 : "Runners have a flashlight restriction."
+		2 : "Killers have a flashlight restriction."
+		3 : "Both can't switch flashlight."
+	]
 ]
