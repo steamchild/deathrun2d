@@ -5828,3 +5828,2323 @@ physics               [variable]       30986/4194304  ( 0.7%)
 Total triangle count: 544
 Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
 14 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...10**** leaked ****
+Entity prop_static (10.11 -373.89 -232.00) leaked!
+Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (29380 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 109 texinfos to 51
+Reduced 19 texdatas to 16 (493 bytes to 432)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+1 second elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+LoadPortals: couldn't read d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+No vis information, direct lighting only.
+215 faces
+77319 square feet [11133952.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...10Build Patch/Sample Hash Table(s).....Done<0.0040 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 85/8192         1020/98304    ( 1.0%) 
+brushsides             516/65536        4128/524288   ( 0.8%) 
+planes                 280/65536        5600/1310720  ( 0.4%) 
+vertexes               460/65536        5520/786432   ( 0.7%) 
+nodes                  323/65536       10336/2097152  ( 0.5%) 
+texinfos                51/12288        3672/884736   ( 0.4%) 
+texdata                 16/2048          512/65536    ( 0.8%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  215/65536       12040/3670016  ( 0.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              132/65536        7392/3670016  ( 0.2%) 
+leaves                 347/65536       11104/2097152  ( 0.5%) 
+leaffaces              238/65536         476/131072   ( 0.4%) 
+leafbrushes            124/65536         248/131072   ( 0.2%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges             1503/512000       6012/2048000  ( 0.3%) 
+edges                  926/256000       3704/1024000  ( 0.4%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             18/32768         180/327680   ( 0.1%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           285/65536         570/131072   ( 0.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]      106824/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]           0/16777216 ( 0.0%) 
+entdata               [variable]       26936/393216   ( 6.9%) 
+LDR leaf ambient       347/65536        8328/1572864  ( 0.5%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/1290     ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       29380/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 255572 bytes ====
+
+Total triangle count: 545
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+7 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (29380 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 109 texinfos to 46
+Reduced 19 texdatas to 15 (493 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  40 portalclusters
+  96 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1570
+Average clusters visible: 39
+Building PAS...
+Average clusters audible: 40
+visdatasize:724  compressed from 640
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+143 faces
+45713 square feet [6582784.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+143 patches before subdivision
+3619 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 342841, max 278
+transfer lists:   2.6 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(2062, 2022, 1817)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(625, 602, 482)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(203, 192, 138)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(66, 61, 39)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(22, 20, 12)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 7, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0042 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 85/8192         1020/98304    ( 1.0%) 
+brushsides             516/65536        4128/524288   ( 0.8%) 
+planes                 280/65536        5600/1310720  ( 0.4%) 
+vertexes               362/65536        4344/786432   ( 0.6%) 
+nodes                  217/65536        6944/2097152  ( 0.3%) 
+texinfos                46/12288        3312/884736   ( 0.4%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  143/65536        8008/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               91/65536        5096/3670016  ( 0.1%) 
+leaves                 241/65536        7712/2097152  ( 0.4%) 
+leaffaces              157/65536         314/131072   ( 0.2%) 
+leafbrushes            123/65536         246/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1000/512000       4000/2048000  ( 0.2%) 
+edges                  631/256000       2524/1024000  ( 0.2%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips              8/32768          80/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           105/65536         210/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       79036/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         724/16777216 ( 0.0%) 
+entdata               [variable]       26320/393216   ( 6.7%) 
+LDR leaf ambient       241/65536        5784/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       29380/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 206844 bytes ====
+
+Total triangle count: 350
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+7 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (30428 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 108 texinfos to 45
+Reduced 19 texdatas to 15 (493 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  46 portalclusters
+ 110 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2086
+Average clusters visible: 45
+Building PAS...
+Average clusters audible: 46
+visdatasize:924  compressed from 736
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+149 faces
+52199 square feet [7516672.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+149 patches before subdivision
+2431 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 173474, max 221
+transfer lists:   1.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1899, 1865, 1676)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(567, 547, 439)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(185, 175, 126)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(60, 56, 36)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(20, 18, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0028 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 88/8192         1056/98304    ( 1.1%) 
+brushsides             534/65536        4272/524288   ( 0.8%) 
+planes                 284/65536        5680/1310720  ( 0.4%) 
+vertexes               377/65536        4524/786432   ( 0.6%) 
+nodes                  228/65536        7296/2097152  ( 0.3%) 
+texinfos                45/12288        3240/884736   ( 0.4%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  149/65536        8344/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               95/65536        5320/3670016  ( 0.1%) 
+leaves                 252/65536        8064/2097152  ( 0.4%) 
+leaffaces              168/65536         336/131072   ( 0.3%) 
+leafbrushes            132/65536         264/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1048/512000       4192/2048000  ( 0.2%) 
+edges                  654/256000       2616/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             10/32768         100/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           135/65536         270/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       63540/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         924/16777216 ( 0.0%) 
+entdata               [variable]       26320/393216   ( 6.7%) 
+LDR leaf ambient       252/65536        6048/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       30428/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 194896 bytes ====
+
+Total triangle count: 370
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+5 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (31148 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 108 texinfos to 45
+Reduced 19 texdatas to 15 (493 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+1 second elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  46 portalclusters
+ 110 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2086
+Average clusters visible: 45
+Building PAS...
+Average clusters audible: 46
+visdatasize:924  compressed from 736
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+149 faces
+52199 square feet [7516672.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+149 patches before subdivision
+2431 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 173474, max 221
+transfer lists:   1.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1899, 1865, 1676)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(567, 547, 439)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(185, 175, 126)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(60, 56, 36)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(20, 18, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0028 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 89/8192         1068/98304    ( 1.1%) 
+brushsides             541/65536        4328/524288   ( 0.8%) 
+planes                 284/65536        5680/1310720  ( 0.4%) 
+vertexes               377/65536        4524/786432   ( 0.6%) 
+nodes                  228/65536        7296/2097152  ( 0.3%) 
+texinfos                45/12288        3240/884736   ( 0.4%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  149/65536        8344/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               95/65536        5320/3670016  ( 0.1%) 
+leaves                 252/65536        8064/2097152  ( 0.4%) 
+leaffaces              168/65536         336/131072   ( 0.3%) 
+leafbrushes            147/65536         294/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1048/512000       4192/2048000  ( 0.2%) 
+edges                  654/256000       2616/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             10/32768         100/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           135/65536         270/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       63540/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         924/16777216 ( 0.0%) 
+entdata               [variable]       26320/393216   ( 6.7%) 
+LDR leaf ambient       252/65536        6048/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       31148/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 195714 bytes ====
+
+Total triangle count: 370
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+5 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (1)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (31148 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 108 texinfos to 45
+Reduced 19 texdatas to 15 (493 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+1 second elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  46 portalclusters
+ 110 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2086
+Average clusters visible: 45
+Building PAS...
+Average clusters audible: 46
+visdatasize:924  compressed from 736
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+149 faces
+52199 square feet [7516672.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+149 patches before subdivision
+2431 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 173474, max 221
+transfer lists:   1.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1899, 1865, 1676)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(567, 547, 439)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(185, 175, 126)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(60, 56, 36)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(20, 18, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0036 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 89/8192         1068/98304    ( 1.1%) 
+brushsides             541/65536        4328/524288   ( 0.8%) 
+planes                 288/65536        5760/1310720  ( 0.4%) 
+vertexes               377/65536        4524/786432   ( 0.6%) 
+nodes                  228/65536        7296/2097152  ( 0.3%) 
+texinfos                45/12288        3240/884736   ( 0.4%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  149/65536        8344/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               95/65536        5320/3670016  ( 0.1%) 
+leaves                 252/65536        8064/2097152  ( 0.4%) 
+leaffaces              168/65536         336/131072   ( 0.3%) 
+leafbrushes            147/65536         294/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1048/512000       4192/2048000  ( 0.2%) 
+edges                  654/256000       2616/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             10/32768         100/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           135/65536         270/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       63540/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         924/16777216 ( 0.0%) 
+entdata               [variable]       26318/393216   ( 6.7%) 
+LDR leaf ambient       252/65536        6048/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       31148/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 195792 bytes ====
+
+Total triangle count: 370
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+5 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (31150 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 108 texinfos to 45
+Reduced 19 texdatas to 15 (493 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+1 second elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  46 portalclusters
+ 110 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2086
+Average clusters visible: 45
+Building PAS...
+Average clusters audible: 46
+visdatasize:924  compressed from 736
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+149 faces
+52199 square feet [7516672.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+149 patches before subdivision
+2431 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 173474, max 221
+transfer lists:   1.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1899, 1865, 1676)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(567, 547, 439)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(185, 175, 126)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(60, 56, 36)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(20, 18, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0031 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 89/8192         1068/98304    ( 1.1%) 
+brushsides             541/65536        4328/524288   ( 0.8%) 
+planes                 294/65536        5880/1310720  ( 0.4%) 
+vertexes               377/65536        4524/786432   ( 0.6%) 
+nodes                  228/65536        7296/2097152  ( 0.3%) 
+texinfos                45/12288        3240/884736   ( 0.4%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  149/65536        8344/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               95/65536        5320/3670016  ( 0.1%) 
+leaves                 252/65536        8064/2097152  ( 0.4%) 
+leaffaces              168/65536         336/131072   ( 0.3%) 
+leafbrushes            147/65536         294/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1048/512000       4192/2048000  ( 0.2%) 
+edges                  654/256000       2616/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             10/32768         100/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           135/65536         270/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       63540/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         924/16777216 ( 0.0%) 
+entdata               [variable]       26318/393216   ( 6.7%) 
+LDR leaf ambient       252/65536        6048/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       31150/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 195914 bytes ====
+
+Total triangle count: 370
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+5 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (31150 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 108 texinfos to 45
+Reduced 19 texdatas to 15 (493 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  46 portalclusters
+ 110 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2086
+Average clusters visible: 45
+Building PAS...
+Average clusters audible: 46
+visdatasize:924  compressed from 736
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+149 faces
+52199 square feet [7516672.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+149 patches before subdivision
+2431 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 173474, max 221
+transfer lists:   1.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1899, 1865, 1676)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(567, 547, 439)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(185, 175, 126)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(60, 56, 36)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(20, 18, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0031 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 89/8192         1068/98304    ( 1.1%) 
+brushsides             541/65536        4328/524288   ( 0.8%) 
+planes                 294/65536        5880/1310720  ( 0.4%) 
+vertexes               377/65536        4524/786432   ( 0.6%) 
+nodes                  228/65536        7296/2097152  ( 0.3%) 
+texinfos                45/12288        3240/884736   ( 0.4%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  149/65536        8344/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               95/65536        5320/3670016  ( 0.1%) 
+leaves                 252/65536        8064/2097152  ( 0.4%) 
+leaffaces              168/65536         336/131072   ( 0.3%) 
+leafbrushes            147/65536         294/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1048/512000       4192/2048000  ( 0.2%) 
+edges                  654/256000       2616/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             10/32768         100/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           135/65536         270/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       63540/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         924/16777216 ( 0.0%) 
+entdata               [variable]       26318/393216   ( 6.7%) 
+LDR leaf ambient       252/65536        6048/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       31150/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 195914 bytes ====
+
+Total triangle count: 370
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+5 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (29810 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 105 texinfos to 45
+Reduced 18 texdatas to 15 (477 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+1 second elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  48 portalclusters
+ 113 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2254
+Average clusters visible: 46
+Building PAS...
+Average clusters audible: 48
+visdatasize:964  compressed from 768
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+150 faces
+52199 square feet [7516672.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+150 patches before subdivision
+2560 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 183890, max 224
+transfer lists:   1.4 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1952, 1917, 1724)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(583, 563, 452)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(190, 181, 130)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(62, 58, 37)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(21, 19, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0031 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 89/8192         1068/98304    ( 1.1%) 
+brushsides             541/65536        4328/524288   ( 0.8%) 
+planes                 294/65536        5880/1310720  ( 0.4%) 
+vertexes               371/65536        4452/786432   ( 0.6%) 
+nodes                  233/65536        7456/2097152  ( 0.4%) 
+texinfos                45/12288        3240/884736   ( 0.4%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  150/65536        8400/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               94/65536        5264/3670016  ( 0.1%) 
+leaves                 257/65536        8224/2097152  ( 0.4%) 
+leaffaces              178/65536         356/131072   ( 0.3%) 
+leafbrushes            136/65536         272/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1046/512000       4184/2048000  ( 0.2%) 
+edges                  658/256000       2632/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips              6/32768          60/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            84/65536         168/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       63996/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         964/16777216 ( 0.0%) 
+entdata               [variable]       26318/393216   ( 6.7%) 
+LDR leaf ambient       257/65536        6168/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       29810/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 195302 bytes ====
+
+Total triangle count: 370
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+5 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (29810 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 105 texinfos to 45
+Reduced 18 texdatas to 15 (477 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+3 seconds elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  48 portalclusters
+ 113 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2254
+Average clusters visible: 46
+Building PAS...
+Average clusters audible: 48
+visdatasize:964  compressed from 768
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+150 faces
+52199 square feet [7516672.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+150 patches before subdivision
+2560 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 183890, max 224
+transfer lists:   1.4 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1952, 1917, 1724)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(583, 563, 452)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(190, 181, 130)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(62, 58, 37)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(21, 19, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0027 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 89/8192         1068/98304    ( 1.1%) 
+brushsides             541/65536        4328/524288   ( 0.8%) 
+planes                 294/65536        5880/1310720  ( 0.4%) 
+vertexes               371/65536        4452/786432   ( 0.6%) 
+nodes                  233/65536        7456/2097152  ( 0.4%) 
+texinfos                45/12288        3240/884736   ( 0.4%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  150/65536        8400/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               94/65536        5264/3670016  ( 0.1%) 
+leaves                 257/65536        8224/2097152  ( 0.4%) 
+leaffaces              178/65536         356/131072   ( 0.3%) 
+leafbrushes            136/65536         272/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1046/512000       4184/2048000  ( 0.2%) 
+edges                  658/256000       2632/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips              6/32768          60/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            84/65536         168/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       63996/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         964/16777216 ( 0.0%) 
+entdata               [variable]       26318/393216   ( 6.7%) 
+LDR leaf ambient       257/65536        6168/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       29810/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 195302 bytes ====
+
+Total triangle count: 370
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+6 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (29812 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 106 texinfos to 43
+Reduced 18 texdatas to 15 (477 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+1 second elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  48 portalclusters
+ 113 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2254
+Average clusters visible: 46
+Building PAS...
+Average clusters audible: 48
+visdatasize:964  compressed from 768
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+144 faces
+61927 square feet [8917504.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+144 patches before subdivision
+2554 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 182979, max 224
+transfer lists:   1.4 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1944, 1909, 1717)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(580, 560, 450)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(190, 180, 130)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(62, 58, 37)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(21, 19, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0033 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 89/8192         1068/98304    ( 1.1%) 
+brushsides             541/65536        4328/524288   ( 0.8%) 
+planes                 300/65536        6000/1310720  ( 0.5%) 
+vertexes               371/65536        4452/786432   ( 0.6%) 
+nodes                  233/65536        7456/2097152  ( 0.4%) 
+texinfos                43/12288        3096/884736   ( 0.3%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  144/65536        8064/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               88/65536        4928/3670016  ( 0.1%) 
+leaves                 257/65536        8224/2097152  ( 0.4%) 
+leaffaces              172/65536         344/131072   ( 0.3%) 
+leafbrushes            136/65536         272/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges              998/512000       3992/2048000  ( 0.2%) 
+edges                  634/256000       2536/1024000  ( 0.2%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips              6/32768          60/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            84/65536         168/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       63996/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         964/16777216 ( 0.0%) 
+entdata               [variable]       26318/393216   ( 6.7%) 
+LDR leaf ambient       257/65536        6168/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       29812/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 194308 bytes ====
+
+Total triangle count: 358
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+8 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (29812 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 106 texinfos to 43
+Reduced 18 texdatas to 15 (477 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+1 second elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  48 portalclusters
+ 117 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2254
+Average clusters visible: 46
+Building PAS...
+Average clusters audible: 48
+visdatasize:964  compressed from 768
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+146 faces
+61927 square feet [8917504.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+146 patches before subdivision
+2544 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 183689, max 221
+transfer lists:   1.4 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1963, 1927, 1733)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(586, 566, 454)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(192, 182, 131)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(63, 58, 38)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(21, 19, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0030 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  23/1024         1104/49152    ( 2.2%) 
+brushes                 89/8192         1068/98304    ( 1.1%) 
+brushsides             541/65536        4328/524288   ( 0.8%) 
+planes                 300/65536        6000/1310720  ( 0.5%) 
+vertexes               379/65536        4548/786432   ( 0.6%) 
+nodes                  233/65536        7456/2097152  ( 0.4%) 
+texinfos                43/12288        3096/884736   ( 0.3%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  146/65536        8176/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               88/65536        4928/3670016  ( 0.1%) 
+leaves                 257/65536        8224/2097152  ( 0.4%) 
+leaffaces              176/65536         352/131072   ( 0.3%) 
+leafbrushes            136/65536         272/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1010/512000       4040/2048000  ( 0.2%) 
+edges                  640/256000       2560/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips              9/32768          90/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           141/65536         282/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       63996/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]         964/16777216 ( 0.0%) 
+entdata               [variable]       26318/393216   ( 6.7%) 
+LDR leaf ambient       257/65536        6168/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       29812/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 194740 bytes ====
+
+Total triangle count: 366
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+5 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (30760 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 108 texinfos to 45
+Reduced 18 texdatas to 15 (477 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+3 seconds elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  54 portalclusters
+ 129 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2866
+Average clusters visible: 53
+Building PAS...
+Average clusters audible: 54
+visdatasize:1192  compressed from 864
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+160 faces
+77400 square feet [11145728.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+160 patches before subdivision
+2550 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 183390, max 224
+transfer lists:   1.4 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1943, 1908, 1716)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(575, 556, 446)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(187, 178, 128)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(61, 57, 37)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(20, 18, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0033 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  24/1024         1152/49152    ( 2.3%) 
+brushes                 90/8192         1080/98304    ( 1.1%) 
+brushsides             547/65536        4376/524288   ( 0.8%) 
+planes                 306/65536        6120/1310720  ( 0.5%) 
+vertexes               395/65536        4740/786432   ( 0.6%) 
+nodes                  247/65536        7904/2097152  ( 0.4%) 
+texinfos                45/12288        3240/884736   ( 0.4%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  160/65536        8960/3670016  ( 0.2%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               95/65536        5320/3670016  ( 0.1%) 
+leaves                 272/65536        8704/2097152  ( 0.4%) 
+leaffaces              188/65536         376/131072   ( 0.3%) 
+leafbrushes            142/65536         284/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1094/512000       4376/2048000  ( 0.2%) 
+edges                  693/256000       2772/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips              6/32768          60/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            84/65536         168/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       64380/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        1192/16777216 ( 0.0%) 
+entdata               [variable]       26752/393216   ( 6.8%) 
+LDR leaf ambient       272/65536        6528/1572864  ( 0.4%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       30760/4194304  ( 0.7%) 
+==== Total Win32 BSP file data space used: 200202 bytes ====
+
+Total triangle count: 394
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+9 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (36601 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 137 texinfos to 59
+Reduced 18 texdatas to 15 (477 bytes to 405)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+3 seconds elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  57 portalclusters
+ 139 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 3211
+Average clusters visible: 56
+Building PAS...
+Average clusters audible: 57
+visdatasize:1372  compressed from 912
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+185 faces
+77438 square feet [11151127.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+185 patches before subdivision
+2559 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 185462, max 262
+transfer lists:   1.4 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1931, 1896, 1706)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(566, 546, 439)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(186, 176, 127)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(60, 56, 36)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(20, 18, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0044 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  29/1024         1392/49152    ( 2.8%) 
+brushes                104/8192         1248/98304    ( 1.3%) 
+brushsides             643/65536        5144/524288   ( 1.0%) 
+planes                 366/65536        7320/1310720  ( 0.6%) 
+vertexes               451/65536        5412/786432   ( 0.7%) 
+nodes                  285/65536        9120/2097152  ( 0.4%) 
+texinfos                59/12288        4248/884736   ( 0.5%) 
+texdata                 15/2048          480/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  185/65536       10360/3670016  ( 0.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              122/65536        6832/3670016  ( 0.2%) 
+leaves                 315/65536       10080/2097152  ( 0.5%) 
+leaffaces              217/65536         434/131072   ( 0.3%) 
+leafbrushes            155/65536         310/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1316/512000       5264/2048000  ( 0.3%) 
+edges                  846/256000       3384/1024000  ( 0.3%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips              8/32768          80/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           123/65536         246/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       67120/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        1372/16777216 ( 0.0%) 
+entdata               [variable]       28602/393216   ( 7.3%) 
+LDR leaf ambient       315/65536        7560/1572864  ( 0.5%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/964      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       36601/4194304  ( 0.9%) 
+==== Total Win32 BSP file data space used: 223087 bytes ====
+
+Total triangle count: 458
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+9 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (37666 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 139 texinfos to 61
+Reduced 19 texdatas to 16 (517 bytes to 445)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+3 seconds elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  57 portalclusters
+ 139 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 3211
+Average clusters visible: 56
+Building PAS...
+Average clusters audible: 57
+visdatasize:1372  compressed from 912
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+201 faces
+80666 square feet [11616023.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+201 patches before subdivision
+2737 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 200404, max 267
+transfer lists:   1.5 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(1923, 1888, 1697)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(563, 543, 436)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(184, 175, 126)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(60, 56, 36)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(20, 18, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0036 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  29/1024         1392/49152    ( 2.8%) 
+brushes                107/8192         1284/98304    ( 1.3%) 
+brushsides             661/65536        5288/524288   ( 1.0%) 
+planes                 370/65536        7400/1310720  ( 0.6%) 
+vertexes               476/65536        5712/786432   ( 0.7%) 
+nodes                  285/65536        9120/2097152  ( 0.4%) 
+texinfos                61/12288        4392/884736   ( 0.5%) 
+texdata                 16/2048          512/65536    ( 0.8%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  201/65536       11256/3670016  ( 0.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              133/65536        7448/3670016  ( 0.2%) 
+leaves                 315/65536       10080/2097152  ( 0.5%) 
+leaffaces              233/65536         466/131072   ( 0.4%) 
+leafbrushes            161/65536         322/131072   ( 0.2%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1430/512000       5720/2048000  ( 0.3%) 
+edges                  911/256000       3644/1024000  ( 0.4%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips              8/32768          80/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           123/65536         246/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       71204/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        1372/16777216 ( 0.0%) 
+entdata               [variable]       28605/393216   ( 7.3%) 
+LDR leaf ambient       315/65536        7560/1572864  ( 0.5%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/962      ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       37666/4194304  ( 0.9%) 
+==== Total Win32 BSP file data space used: 231247 bytes ====
+
+Total triangle count: 496
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+9 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...10**** leaked ****
+Entity func_brush (1248.00 -42.00 128.00) leaked!
+Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (46361 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 155 texinfos to 70
+Reduced 19 texdatas to 17 (517 bytes to 472)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+2 seconds elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+LoadPortals: couldn't read d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+No vis information, direct lighting only.
+327 faces
+122367 square feet [17620890.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...10Build Patch/Sample Hash Table(s).....Done<0.0069 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  35/1024         1680/49152    ( 3.4%) 
+brushes                123/8192         1476/98304    ( 1.5%) 
+brushsides             760/65536        6080/524288   ( 1.2%) 
+planes                 406/65536        8120/1310720  ( 0.6%) 
+vertexes               687/65536        8244/786432   ( 1.0%) 
+nodes                  460/65536       14720/2097152  ( 0.7%) 
+texinfos                70/12288        5040/884736   ( 0.6%) 
+texdata                 17/2048          544/65536    ( 0.8%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  327/65536       18312/3670016  ( 0.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              213/65536       11928/3670016  ( 0.3%) 
+leaves                 496/65536       15872/2097152  ( 0.8%) 
+leaffaces              365/65536         730/131072   ( 0.6%) 
+leafbrushes            180/65536         360/131072   ( 0.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             2354/512000       9416/2048000  ( 0.5%) 
+edges                 1483/256000       5932/1024000  ( 0.6%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             25/32768         250/327680   ( 0.1%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           426/65536         852/131072   ( 0.7%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       96720/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]           0/16777216 ( 0.0%) 
+entdata               [variable]       27092/393216   ( 6.9%) 
+LDR leaf ambient       496/65536       11904/1572864  ( 0.8%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/1464     ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       46361/4194304  ( 1.1%) 
+==== Total Win32 BSP file data space used: 302111 bytes ====
+
+Total triangle count: 848
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+6 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (46297 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 155 texinfos to 65
+Reduced 19 texdatas to 16 (517 bytes to 445)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+1 second elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  62 portalclusters
+ 147 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 3752
+Average clusters visible: 60
+Building PAS...
+Average clusters audible: 62
+visdatasize:1492  compressed from 992
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+221 faces
+81494 square feet [11735191.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+221 patches before subdivision
+2969 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 215660, max 265
+transfer lists:   1.6 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(2034, 1994, 1794)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(602, 580, 466)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(197, 187, 135)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(64, 59, 38)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(21, 19, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0062 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  35/1024         1680/49152    ( 3.4%) 
+brushes                123/8192         1476/98304    ( 1.5%) 
+brushsides             760/65536        6080/524288   ( 1.2%) 
+planes                 406/65536        8120/1310720  ( 0.6%) 
+vertexes               555/65536        6660/786432   ( 0.8%) 
+nodes                  329/65536       10528/2097152  ( 0.5%) 
+texinfos                65/12288        4680/884736   ( 0.5%) 
+texdata                 16/2048          512/65536    ( 0.8%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  221/65536       12376/3670016  ( 0.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              149/65536        8344/3670016  ( 0.2%) 
+leaves                 365/65536       11680/2097152  ( 0.6%) 
+leaffaces              256/65536         512/131072   ( 0.4%) 
+leafbrushes            182/65536         364/131072   ( 0.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1586/512000       6344/2048000  ( 0.3%) 
+edges                 1006/256000       4024/1024000  ( 0.4%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             10/32768         100/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           162/65536         324/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       77616/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        1492/16777216 ( 0.0%) 
+entdata               [variable]       27092/393216   ( 6.9%) 
+LDR leaf ambient       365/65536        8760/1572864  ( 0.6%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/1464     ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       46297/4194304  ( 1.1%) 
+==== Total Win32 BSP file data space used: 255539 bytes ====
+
+Total triangle count: 548
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+14 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (46297 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 155 texinfos to 65
+Reduced 19 texdatas to 16 (517 bytes to 445)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+1 second elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  62 portalclusters
+ 147 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 3752
+Average clusters visible: 60
+Building PAS...
+Average clusters audible: 62
+visdatasize:1492  compressed from 992
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+221 faces
+81494 square feet [11735191.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+221 patches before subdivision
+2969 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 215660, max 265
+transfer lists:   1.6 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(2034, 1994, 1794)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(602, 580, 466)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(197, 187, 135)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(64, 59, 38)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(21, 19, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0048 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  35/1024         1680/49152    ( 3.4%) 
+brushes                123/8192         1476/98304    ( 1.5%) 
+brushsides             760/65536        6080/524288   ( 1.2%) 
+planes                 406/65536        8120/1310720  ( 0.6%) 
+vertexes               555/65536        6660/786432   ( 0.8%) 
+nodes                  329/65536       10528/2097152  ( 0.5%) 
+texinfos                65/12288        4680/884736   ( 0.5%) 
+texdata                 16/2048          512/65536    ( 0.8%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  221/65536       12376/3670016  ( 0.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              149/65536        8344/3670016  ( 0.2%) 
+leaves                 365/65536       11680/2097152  ( 0.6%) 
+leaffaces              256/65536         512/131072   ( 0.4%) 
+leafbrushes            182/65536         364/131072   ( 0.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1586/512000       6344/2048000  ( 0.3%) 
+edges                 1006/256000       4024/1024000  ( 0.4%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             10/32768         100/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           162/65536         324/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       77616/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        1492/16777216 ( 0.0%) 
+entdata               [variable]       27109/393216   ( 6.9%) 
+LDR leaf ambient       365/65536        8760/1572864  ( 0.6%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/1464     ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       46297/4194304  ( 1.1%) 
+==== Total Win32 BSP file data space used: 255556 bytes ====
+
+Total triangle count: 548
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+9 seconds elapsed
+
+
+
+materialPath: d:\steam\steamapps\hurricaaanedev\half-life 2\hl2\materials
+Loading D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt...done (0)
+Creating default cubemaps for env_cubemap using skybox materials:
+skybox/sky_borealis01*.vmt
+Run buildcubemaps in the engine to get the correct cube maps.
+
+No such variable "$hdrbasetexture" for material "skybox/sky_borealis01rt"
+Can't load skybox file skybox/sky_borealis01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (46938 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 152 texinfos to 65
+Reduced 19 texdatas to 16 (517 bytes to 445)
+Writing D:\Steam\steamapps\SourceMods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+2 seconds elapsed
+
+
+
+1 threads
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+reading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.prt
+  72 portalclusters
+ 191 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 5054
+Average clusters visible: 70
+Building PAS...
+Average clusters audible: 72
+visdatasize:1876  compressed from 2304
+writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+238 faces
+81494 square feet [11735191.00 square inches]
+0 displacements
+0 square feet [0.00 square inches]
+238 patches before subdivision
+2990 patches after subdivision
+5 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 222903, max 268
+transfer lists:   1.7 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(2064, 2024, 1821)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(609, 587, 472)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(200, 190, 137)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(65, 60, 39)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(22, 20, 11)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(7, 6, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(1, 1, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0040 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+ComputePerLeafAmbientLighting: 0...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  34/1024         1632/49152    ( 3.3%) 
+brushes                125/8192         1500/98304    ( 1.5%) 
+brushsides             775/65536        6200/524288   ( 1.2%) 
+planes                 412/65536        8240/1310720  ( 0.6%) 
+vertexes               589/65536        7068/786432   ( 0.9%) 
+nodes                  334/65536       10688/2097152  ( 0.5%) 
+texinfos                65/12288        4680/884736   ( 0.5%) 
+texdata                 16/2048          512/65536    ( 0.8%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  238/65536       13328/3670016  ( 0.4%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              149/65536        8344/3670016  ( 0.2%) 
+leaves                 369/65536       11808/2097152  ( 0.6%) 
+leaffaces              273/65536         546/131072   ( 0.4%) 
+leafbrushes            195/65536         390/131072   ( 0.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges             1672/512000       6688/2048000  ( 0.3%) 
+edges                 1067/256000       4268/1024000  ( 0.4%) 
+LDR worldlights          5/8192          440/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+waterstrips             15/32768         150/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           231/65536         462/131072   ( 0.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       78536/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        1876/16777216 ( 0.0%) 
+entdata               [variable]       26683/393216   ( 6.8%) 
+LDR leaf ambient       369/65536        8856/1572864  ( 0.6%) 
+HDR leaf ambient         0/65536           0/1572864  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/1468     ( 0.1%) 
+pakfile               [variable]       10020/0        ( 0.0%) 
+
+Level flags = 0
+
+Win32 Specific Data:
+physics               [variable]       46938/4194304  ( 1.1%) 
+==== Total Win32 BSP file data space used: 259871 bytes ====
+
+Total triangle count: 600
+Writing d:\steam\steamapps\sourcemods\garrysmod\gamemodes\deathrun2d\content\maps\dr2d_platform.bsp
+8 seconds elapsed

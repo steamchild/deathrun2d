@@ -1,3 +1,8 @@
+//////////////////////////////////////////////////
+// DeathRun 2D (by Hurricaaane (Ha3))
+// - Main shared.
+//////////////////////////////////////////////////
+
 GM.Name     = "DeathRun 2D"  
 GM.Author   = "Hurricaaane"  
 GM.Email    = ""  
@@ -42,8 +47,20 @@ GM.RoundLength = convertTime(0, 8, 0, "s") // Round length, in seconds
 GM.RoundEndsWhenOneTeamAlive = true	
 GM.HudSkin = "SimpleSkin"
 
-TEAM_RUNNERS = 1  
-TEAM_KILLERS = 2  
+TEAM_RUNNERS = 1
+TEAM_KILLERS = 2
+
+
+DR2D_EVENT_RUNNERSWIN   = 1
+DR2D_EVENT_KILLERSWIN   = 2
+DR2D_EVENT_DRAW   = 3
+DR2D_EVENT_TIMEUP = 4
+
+DR2D_GROUP_NONE    = 0
+DR2D_GROUP_RUNNERS = 1
+DR2D_GROUP_KILLERS = 2
+DR2D_GROUP_BOTH    = 3
+
   
 function GM:CreateTeams()  
     if ( !GAMEMODE.TeamBased ) then return end  
