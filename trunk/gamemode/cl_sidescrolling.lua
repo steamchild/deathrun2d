@@ -100,7 +100,9 @@ function GM:CreateMove( cmd )
 	local fwmov = cmd:GetForwardMove()
 	
 	if (LocalPlayer():GetMoveType() != MOVETYPE_LADDER) then
-		if (fwmov == 0) then
+		if (fwmov == 0) then // Sidescroll movements
+			//self.Data.CamFoundLadder = false
+			
 			local aim = (mpos - ppos):Angle()
 			
 			if (mpos.x < ppos.x) then
@@ -117,16 +119,27 @@ function GM:CreateMove( cmd )
 			end
 			cmd:SetSideMove( 0 )
 			
-		else
+		else // Special aim.
 			self.Data.CamRel = (ScrH()*0.2)*(300/(self.Data.CamDist + 1))
 			local headcalc = 2 * (math.Clamp( gui.MouseY() - ppos.y, - self.Data.CamRel, self.Data.CamRel ) + self.Data.CamRel)/(2*self.Data.CamRel) - 1
 			local aimang = math.deg( math.asin( headcalc ) )*0.99
 			cmd:SetForwardMove( 0 )
 			
-			if (fwmov > 0) then
+			if (fwmov > 0) then // Looking to the wall
 				ang.p = aimang
 				ang.y = 90
+				/*
+				if not self.Data.CamFoundLadder then
+					local ladderdetect = util.QuickTrace(vpos, ang:Forward() * 48, LocalPlayer())
+					if ValidEntity(ladderdetect.Entity) and ladderdetect.Entity:GetClass() == "func_brush" then
+						self.Data.CamFoundLadder = true
+						
+					end
+				end
+				*/
 			else
+				//self.Data.CamFoundLadder = false
+			
 				ang.p = aimang
 				ang.y = -90
 				cmd:SetSideMove( - cmd:GetSideMove( ) )
@@ -134,6 +147,7 @@ function GM:CreateMove( cmd )
 		end
 		
 	else // Player is on a Ladder
+		//self.Data.CamFoundLadder = false
 		
 		if (cmd:GetSideMove() == 0) then
 			ang.y = 90

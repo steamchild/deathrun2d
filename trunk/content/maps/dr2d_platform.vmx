@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4037"
-	"mapversion" "105"
+	"mapversion" "110"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,13 +26,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "4"
+	"nGridSpacing" "8"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "105"
+	"mapversion" "110"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -7576,6 +7576,12 @@ entity
 	"classname" "gmod_dr2d_data"
 	"deathsound_killer" "NPC_MetroPolice.Die"
 	"deathsound_runner" "physics/flesh/flesh_bloody_break.wav"
+	"winsound_runners" "NPC_SScanner.Illuminate"
+	"winsound_killers" "NPC_SScanner.Combat"
+	"drawsound" "NPC_CScanner.Alert"
+	"timeup" "NPC_CScanner.Combat"
+	"flashlight_on_spawn" "1"
+	"flashlight_switch" "1"
 	"origin" "32 -176 -32"
 	editor
 	{
@@ -12213,7 +12219,7 @@ entity
 	"InputFilter" "0"
 	"StartDisabled" "0"
 	"disableshadows" "0"
-	"Solidity" "1"
+	"Solidity" "2"
 	"invert_exclusion" "0"
 	"solidbsp" "0"
 	"vrad_brush_cast_shadows" "0"
@@ -12303,13 +12309,41 @@ entity
 		"logicalpos" "[0 0]"
 	}
 }
+entity
+{
+	"id" "7054"
+	"classname" "gmod_dr2d_usemarker"
+	"angles" "0 270 0"
+	"origin" "1248 -84 16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "7073"
+	"classname" "gmod_dr2d_usemarker"
+	"angles" "0 270 0"
+	"origin" "1248 -84 152"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-3.23749 -222.033 -10.1752]"
-		"look" "[41.5519 -109.461 -58.5441]"
+		"position" "[1207.21 -155.364 96.1443]"
+		"look" "[1242.95 -40.5852 45.4829]"
 	}
 }
 cordon

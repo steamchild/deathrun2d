@@ -4,10 +4,11 @@
 //////////////////////////////////////////////////
 
 include( 'shared.lua' )
-include( "overv_chataddtext.lua" )
+include( "ply_extension.lua" )
+include( "cl_sidescrolling.lua" )
 include( "sh_partialbrush.lua" )
 include( "sh_datasharing.lua" )
-include( "cl_sidescrolling.lua" )
+include( "overv_chataddtext.lua" )
 
 
 function GM:Think( )

@@ -12,6 +12,8 @@ function ENT:KeyValue( key, value )
 		GAMEMODE:SetEventSound( DR2D_EVENT_KILLERSWIN , value or "" )
 	elseif key == "drawsound" then
 		GAMEMODE:SetEventSound( DR2D_EVENT_DRAW , value or "" )
+	elseif key == "timeupsound" then
+		GAMEMODE:SetEventSound( DR2D_EVENT_TIMEUP , value or "" )
 	elseif key == "flashlight_on_spawn" then
 		GAMEMODE:SetTurnOnFlashlightOnSpawn( value )
 	elseif key == "flashlight_switch" then

@@ -3,18 +3,23 @@
 // - Main serverside.
 //////////////////////////////////////////////////
 
+AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_init.lua" )
+AddCSLuaFile( "tables.lua" )
+AddCSLuaFile( "ply_extension.lua" )
 AddCSLuaFile( "sh_partialbrush.lua" )
 AddCSLuaFile( "sh_datasharing.lua" )
 AddCSLuaFile( "cl_sidescrolling.lua" )
-AddCSLuaFile( "tables.lua" )
-AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "overv_chataddtext.lua" )
 include( "shared.lua" )
 include( "tables.lua" )
-include( "overv_chataddtext.lua" )
+include( "ply_extension.lua" )
 include( "sh_partialbrush.lua" )
 include( "sh_datasharing.lua" )
+include( "overv_chataddtext.lua" )
+
+resource.AddFile("materials/dr2d/worldicon_use.vmt")
+resource.AddFile("materials/dr2d/worldicon_use.vtf")
 
 
 ////////////////////
@@ -42,6 +47,8 @@ function GM:PlayerDeathSound( )
 end
 
 function GM:PlayerDeath( victim )
+	victim:ForceFlashlight( false )
+
 	if self.Data.DeathSounds and self.Data.DeathSounds[victim:Team()] and self.Data.DeathSounds[victim:Team()] != "" then
 		victim:EmitSound( self.Data.DeathSounds[victim:Team()] )
 	end
@@ -91,19 +98,25 @@ function GM:InitPostEntity( )
 end
 
 function GM:PlayerInitialSpawn( ply )
+	self.BaseClass:PlayerInitialSpawn( ply )
+	
 	self:UpdatePartialBrushList( ply )
 	self:UpdateEventSounds( ply )
 end
 
 function GM:PlayerSpawn( ply )
+	self.BaseClass:PlayerSpawn( ply )
+
 	if self.Data.FlashlightSpawn and self.Data.FlashlightSpawn != 0 then
 		if (self.Data.FlashlightSpawn == 3) or (self.Data.FlashlightSpawn == ply:Team()) then
-			ply:Flashlight( true )
+			ply:ForceFlashlight( true )
 		end
 	end
 end
 
 function GM:PlayerSwitchFlashlight( ply )
+	if ply._ForceFlashlight then return true end
+
 	if self.Data.FlashlightSwitch and self.Data.FlashlightSwitch != 0 then
 		if (self.Data.FlashlightSwitch == 3) or (self.Data.FlashlightSwitch == ply:Team()) then
 			return false
