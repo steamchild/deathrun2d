@@ -99,27 +99,26 @@ function GM:CreateMove( cmd )
 	
 	local fwmov = cmd:GetForwardMove()
 	
-	if (LocalPlayer():GetMoveType() != MOVETYPE_LADDER) then
-		if (fwmov == 0) then // Sidescroll movements
-			//self.Data.CamFoundLadder = false
+	if (fwmov == 0) then // Sidescroll movements / On ladder not moving
+		
+		local aim = (mpos - ppos):Angle()
+		
+		if (mpos.x < ppos.x) then
+			aim:RotateAroundAxis(Vector(0,0,1),180)
+			ang.p = -aim.y
+			ang.y = 180
+			cmd:SetForwardMove( -cmd:GetSideMove() )
 			
-			local aim = (mpos - ppos):Angle()
+		else
+			ang.p = aim.y
+			ang.y = 0
+			cmd:SetForwardMove( cmd:GetSideMove() )
 			
-			if (mpos.x < ppos.x) then
-				aim:RotateAroundAxis(Vector(0,0,1),180)
-				ang.p = -aim.y
-				ang.y = 180
-				cmd:SetForwardMove( -cmd:GetSideMove() )
-				
-			else
-				ang.p = aim.y
-				ang.y = 0
-				cmd:SetForwardMove( cmd:GetSideMove() )
-				
-			end
-			cmd:SetSideMove( 0 )
-			
-		else // Special aim.
+		end
+		cmd:SetSideMove( 0 )
+		
+	else // Special aim.
+		if (LocalPlayer():GetMoveType() != MOVETYPE_LADDER) then // Not on ladder : Special aim.
 			self.Data.CamRel = (ScrH()*0.2)*(300/(self.Data.CamDist + 1))
 			local headcalc = 2 * (math.Clamp( gui.MouseY() - ppos.y, - self.Data.CamRel, self.Data.CamRel ) + self.Data.CamRel)/(2*self.Data.CamRel) - 1
 			local aimang = math.deg( math.asin( headcalc ) )*0.99
@@ -128,56 +127,19 @@ function GM:CreateMove( cmd )
 			if (fwmov > 0) then // Looking to the wall
 				ang.p = aimang
 				ang.y = 90
-				/*
-				if not self.Data.CamFoundLadder then
-					local ladderdetect = util.QuickTrace(vpos, ang:Forward() * 48, LocalPlayer())
-					if ValidEntity(ladderdetect.Entity) and ladderdetect.Entity:GetClass() == "func_brush" then
-						self.Data.CamFoundLadder = true
-						
-					end
-				end
-				*/
 			else
-				//self.Data.CamFoundLadder = false
 			
 				ang.p = aimang
 				ang.y = -90
 				cmd:SetSideMove( - cmd:GetSideMove( ) )
 			end
-		end
-		
-	else // Player is on a Ladder
-		//self.Data.CamFoundLadder = false
-		
-		if (cmd:GetSideMove() == 0) then
+			
+		else // Ladder
 			ang.y = 90
 			ang.p = -88
-			
-			/*
-			if (mpos.y < ppos.y) then
-				ang.p = -88
-			else
-				ang.p = 88
-				cmd:SetForwardMove( -fwmov )
-				// Needs retest.
-			end
-			*/
-			
-		else
-			ang.p = 0
-			if (cmd:GetSideMove() < 0) then
-				ang.y = 180
-			else
-				ang.y = 0
-			end
-			
-			//No autolatchout anymore, players will have to use to unlatch.
-			//cmd:SetForwardMove( 1 )
-			cmd:SetForwardMove( 0 )
-			cmd:SetSideMove( 0 )
-			
 		end
 	end
+
 	
 	cmd:SetViewAngles( ang )
 	cmd:SetUpMove( 0 )
