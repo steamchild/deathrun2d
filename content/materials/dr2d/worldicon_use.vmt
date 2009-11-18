@@ -1,0 +1,5 @@
+"UnlitGeneric" 
+{ 
+	"$basetexture"		"dr2d/worldicon_use" 
+	"$translucent" 		1
+} 

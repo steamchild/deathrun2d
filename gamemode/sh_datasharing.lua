@@ -21,19 +21,19 @@ if ( SERVER ) then
 		end
 
 		umsg.Start("EventSounds", plyNet)
-			umsg.String( self.Data.EventSounds[DR2D_EVENT_RUNNERSWIN] )
-			umsg.String( self.Data.EventSounds[DR2D_EVENT_KILLERSWIN] )
-			umsg.String( self.Data.EventSounds[DR2D_EVENT_DRAW] )
-			umsg.String( self.Data.EventSounds[DR2D_EVENT_TIMEUP] )
+			umsg.String( self.Data.EventSounds[DR2D_EVENT_RUNNERSWIN] or "" )
+			umsg.String( self.Data.EventSounds[DR2D_EVENT_KILLERSWIN] or "" )
+			umsg.String( self.Data.EventSounds[DR2D_EVENT_DRAW] or "" )
+			umsg.String( self.Data.EventSounds[DR2D_EVENT_TIMEUP] or "" )
 		umsg.End()
 	end
 	
 	function GM:SetTurnOnFlashlightOnSpawn( value )
-		self.Data.FlashlightSpawn = value
+		self.Data.FlashlightSpawn = tonumber(value)
 	end
 	
 	function GM:SetAllowFlashlightSwitch( value )
-		self.Data.FlashlightSwitch = value
+		self.Data.FlashlightSwitch = tonumber(value)
 	end
 
 else
