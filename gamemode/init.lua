@@ -102,6 +102,7 @@ function GM:PlayerInitialSpawn( ply )
 	
 	self:UpdatePartialBrushList( ply )
 	self:UpdateEventSounds( ply )
+	ply:CrosshairDisable()
 end
 
 function GM:PlayerSpawn( ply )

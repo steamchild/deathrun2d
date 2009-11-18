@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4037"
-	"mapversion" "110"
+	"mapversion" "111"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "110"
+	"mapversion" "111"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -9466,7 +9466,7 @@ entity
 	"id" "152"
 	"classname" "info_player_combine"
 	"angles" "0 180 0"
-	"origin" "704 -64 16"
+	"origin" "696 -64 16"
 	editor
 	{
 		"color" "0 255 0"
@@ -12337,13 +12337,69 @@ entity
 		"logicalpos" "[0 0]"
 	}
 }
+entity
+{
+	"id" "7079"
+	"classname" "info_player_rebel"
+	"angles" "0 0 0"
+	"origin" "120 -64 16"
+	editor
+	{
+		"color" "0 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9000]"
+	}
+}
+entity
+{
+	"id" "7081"
+	"classname" "info_player_rebel"
+	"angles" "0 0 0"
+	"origin" "184 -64 16"
+	editor
+	{
+		"color" "0 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9000]"
+	}
+}
+entity
+{
+	"id" "7083"
+	"classname" "info_player_combine"
+	"angles" "0 180 0"
+	"origin" "648 -64 16"
+	editor
+	{
+		"color" "0 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9000]"
+	}
+}
+entity
+{
+	"id" "7089"
+	"classname" "info_player_combine"
+	"angles" "0 180 0"
+	"origin" "744 -64 16"
+	editor
+	{
+		"color" "0 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9000]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[1207.21 -155.364 96.1443]"
-		"look" "[1242.95 -40.5852 45.4829]"
+		"position" "[701.017 -110.591 23.2551]"
+		"look" "[700.372 10.9891 -24.03]"
 	}
 }
 cordon
