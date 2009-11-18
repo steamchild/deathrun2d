@@ -171,7 +171,9 @@ function GM:CreateMove( cmd )
 				ang.y = 0
 			end
 			
-			cmd:SetForwardMove( 1 )
+			//No autolatchout anymore, players will have to use to unlatch.
+			//cmd:SetForwardMove( 1 )
+			cmd:SetForwardMove( 0 )
 			cmd:SetSideMove( 0 )
 			
 		end
@@ -207,3 +209,9 @@ function GM:GUIMouseReleased( mousecode )
 	end
 end
 
+
+// Garry's Mod Regular version fix
+local function SideScrollShouldDrawLocalPlayer()
+	return true
+end
+hook.Add( "ShouldDrawLocalPlayer", "SideScrollShouldDrawLocalPlayer", SideScrollShouldDrawLocalPlayer );

@@ -107,12 +107,67 @@ end
 
 function GM:PlayerSpawn( ply )
 	self.BaseClass:PlayerSpawn( ply )
+	
+	ply:SetAllowFullRotation( false )
 
 	if self.Data.FlashlightSpawn and self.Data.FlashlightSpawn != 0 then
 		if (self.Data.FlashlightSpawn == 3) or (self.Data.FlashlightSpawn == ply:Team()) then
 			ply:ForceFlashlight( true )
 		end
 	end
+end
+/*
+function GM:PlayerSelectTeamSpawn( TeamID, pl )
+
+	local SpawnPoints = table.ClearKeys( team.GetSpawnPoint( TeamID ) )
+	local NumSpawnPoints = (SpawnPoints != nil) and table.Count( SpawnPoints )
+	if ( not SpawnPoints or NumSpawnPoints == 0 ) then return end
+	
+	local ChosenSpawnPoint = nil
+	local i = 1
+	repeat
+		ChosenSpawnPoint = GAMEMODE:GetBestSpawnPoint( pl, SpawnPoints[i] )
+		
+		i = i + 1
+	until (not ChosenSpawnPoint) and (i <= NumSpawnPoints)
+	
+	if not ChosenSpawnPoint then
+		return table.Random(SpawnPoints)
+	end
+	
+	return ChosenSpawnPoint
+
+end
+
+function GM:GetBestSpawnPoint( pl, spawnpointent )
+
+	local Pos = spawnpointent:GetPos()
+	local Ents = ents.FindInBox( Pos + Vector( -16, -16, 0 ), Pos + Vector( 16, 16, 64 ) )
+	
+	if ( pl:Team() == TEAM_SPECTATOR || pl:Team() == TEAM_UNASSIGNED ) then return true end
+	
+	local Blockers = 0
+	local k = 0
+	repeat
+		local v = Ents[k]
+		if ( IsValid( v ) and v:IsPlayer() and v:Alive() and not v:IsObserver() ) then
+		
+			Blockers = Blockers + 1
+			
+		end
+	until (Blockers == 0) and (k <= #Ents)
+	
+	if ( Blockers > 0 ) then return false end
+	
+	return true
+
+end
+*/
+
+function GM:IsSpawnpointSuitable( pl, spawnpointent, bMakeSuitable )
+	// Don't ask questions, it's always OK to spawn you here.
+	return true
+
 end
 
 function GM:PlayerSwitchFlashlight( ply )
