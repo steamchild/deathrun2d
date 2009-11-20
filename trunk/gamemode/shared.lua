@@ -41,7 +41,7 @@ GM.MaximumDeathLength = 0			// Player will repspawn if death length > this (can 
 GM.MinimumDeathLength = 5			// Player has to be dead for at least this long
 GM.ForceJoinBalancedTeams = false	// Players won't be allowed to join a team if it has more players than another team
 GM.RoundPreStartTime = 2			// Preperation time before a round starts
-GM.NoAutomaticSpawning = false		// Players don't spawn automatically when they die, some other system spawns them
+GM.NoAutomaticSpawning = true		// Players don't spawn automatically when they die, some other system spawns them
 GM.RoundBased = true				// Round based, like CS
 GM.RoundLength = convertTime(0, 8, 0, "s") // Round length, in seconds 
 GM.RoundEndsWhenOneTeamAlive = true	
@@ -72,7 +72,7 @@ function GM:CreateTeams()
     team.SetSpawnPoint( TEAM_RUNNERS, { "info_player_counterterrorist", "info_player_rebel" } )  
     team.SetClass( TEAM_RUNNERS, { "Runner" } )
 	
-    team.SetUp( TEAM_KILLERS, "Killers", Color( 255, 80, 80 ), true )  
+    team.SetUp( TEAM_KILLERS, "Killers", Color( 255, 80, 80 ), false )  
     team.SetSpawnPoint( TEAM_KILLERS, { "info_player_terrorist", "info_player_combine" } )
     team.SetClass( TEAM_KILLERS, { "Killer" } ) 
 	

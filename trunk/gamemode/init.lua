@@ -70,6 +70,67 @@ end
 // Rounds
 ////////////////////
 
+GM.Data.PlayerKillerCookie = {}
+function GM:GetKillerCookie( )
+	if not self.Data.KillerCookie then
+		self.Data.KillerCookie = 0
+	end
+	
+	return self.Data.KillerCookie
+end
+
+function GM:UpgradeKillerCookie( )
+	self.Data.KillerCookie = self:GetGamemodeKillerCookie() + 1
+	
+	for k,ply in pairs(player.GetAll()) do
+		ply:NormalizeKillerCookie()
+	end
+end
+
+function GM:SelectKillers( )
+	for k,ply in pairs(team.GetPlayers(TEAM_KILLERS)) do
+		ply:SetTeam( TEAM_RUNNERS )
+	end
+	
+	local players = table.Copy( team.GetPlayers(TEAM_RUNNERS) )
+	
+	if #players <= 1 then
+		print("Not enough players to start a game.")
+		return
+	end
+	
+	local eligibleplys = {}
+	for k,ply in pairs(players) do
+		if ply:IsKillerEligible() then
+			table.insert( eligibleplys , ply )
+		end
+	end
+	
+	if #eligibleplys == 0 then
+		self:UpgradeKillerCookie()
+	end
+	
+	local playerPickCount = 0
+	if (#players >= 5) and (#eligibleplys >= 2) then
+		playerPickCount = 2
+	else
+		playerPickCount = 1
+	end
+	
+	for i=1,playerPickCount do
+		local chosen = table.remove( eligibleplys , math.random(1,#eligibleplys) )
+		chosen:UpgradeKillerCookie()
+		choser:SetTeam( TEAM_KILLERS )
+	end
+end
+
+function GM:StartRoundBasedGame( )
+	self.BaseClass:StartRoundBasedGame()
+	
+	self:UpdatePartialBrushList( nil )
+	self:SelectKillers( )
+end
+
 function GM:OnRoundStart( num )
 	UTIL_UnFreezeAllPlayers()
 	
@@ -181,8 +242,3 @@ function GM:PlayerSwitchFlashlight( ply )
 	return true
 end
 
-function GM:StartRoundBasedGame( )
-	self.BaseClass:StartRoundBasedGame()
-	
-	self:UpdatePartialBrushList( nil )
-end
