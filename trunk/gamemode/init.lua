@@ -124,11 +124,17 @@ function GM:SelectKillers( )
 	end
 end
 
+function GM:OnPreRoundStart( num )
+	self.BaseClass:OnPreRoundStart( num )
+	self:SelectKillers( )
+	
+end
+
 function GM:StartRoundBasedGame( )
 	self.BaseClass:StartRoundBasedGame()
 	
 	self:UpdatePartialBrushList( nil )
-	self:SelectKillers( )
+	//self:SelectKillers( )
 end
 
 function GM:OnRoundStart( num )
