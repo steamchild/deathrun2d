@@ -72,7 +72,7 @@ function GM:CreateTeams()
     team.SetSpawnPoint( TEAM_RUNNERS, { "info_player_counterterrorist", "info_player_rebel" } )  
     team.SetClass( TEAM_RUNNERS, { "Runner" } )
 	
-    team.SetUp( TEAM_KILLERS, "Killers", Color( 255, 80, 80 ), false )  
+    team.SetUp( TEAM_KILLERS, "Killers", Color( 255, 80, 80 ), true )  //Set to false for real games.
     team.SetSpawnPoint( TEAM_KILLERS, { "info_player_terrorist", "info_player_combine" } )
     team.SetClass( TEAM_KILLERS, { "Killer" } ) 
 	

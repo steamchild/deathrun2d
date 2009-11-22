@@ -20,6 +20,8 @@ include( "overv_chataddtext.lua" )
 
 resource.AddFile("materials/dr2d/worldicon_use.vmt")
 resource.AddFile("materials/dr2d/worldicon_use.vtf")
+resource.AddFile("materials/dr2d/worldicon_arrow.vmt")
+resource.AddFile("materials/dr2d/worldicon_arrow.vtf")
 
 
 ////////////////////
@@ -88,16 +90,21 @@ function GM:UpgradeKillerCookie( )
 end
 
 function GM:SelectKillers( )
+	if ( team.NumPlayers( TEAM_RUNNERS ) + team.NumPlayers( TEAM_KILLERS ) ) <= 1 then
+		print("Not enough players to start a game.")
+		return
+	end
+
 	for k,ply in pairs(team.GetPlayers(TEAM_KILLERS)) do
 		ply:SetTeam( TEAM_RUNNERS )
 	end
 	
 	local players = table.Copy( team.GetPlayers(TEAM_RUNNERS) )
 	
-	if #players <= 1 then
+	/*if #players <= 1 then
 		print("Not enough players to start a game.")
 		return
-	end
+	end*/
 	
 	local eligibleplys = {}
 	for k,ply in pairs(players) do
@@ -120,7 +127,8 @@ function GM:SelectKillers( )
 	for i=1,playerPickCount do
 		local chosen = table.remove( eligibleplys , math.random(1,#eligibleplys) )
 		chosen:UpgradeKillerCookie()
-		choser:SetTeam( TEAM_KILLERS )
+		chosen:SetTeam( TEAM_KILLERS )
+		chosen:KillSilent()
 	end
 end
 
