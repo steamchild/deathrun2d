@@ -99,7 +99,15 @@ function GM:CreateMove( cmd )
 	
 	local fwmov = cmd:GetForwardMove()
 	
-	if (fwmov == 0) then // Sidescroll movements / On ladder not moving
+	if (LocalPlayer():IsObserver()) then
+		ang.p = cmd:GetForwardMove() * 90
+		ang.y = 90
+		
+		if (cmd:GetForwardMove() != 0) then
+			cmd:SetForwardMove(1)
+		end
+	
+	elseif (fwmov == 0) then // Sidescroll movements / On ladder not moving
 		
 		local aim = (mpos - ppos):Angle()
 		

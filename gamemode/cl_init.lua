@@ -33,7 +33,7 @@ function GM:DrawCrosshair( )
 	self:BiltCrosshair( gui.MouseX(), gui.MouseY(), 8, 2, 255, 255, 255, 255 )
 	self:BiltCrosshair( gui.MouseX(), gui.MouseY(), 4, 4, 255, 255, 255, 255 )
 
-	if LocalPlayer():Alive() then
+	if LocalPlayer():Alive() and not LocalPlayer():IsObserver() then
 		if (LocalPlayer():GetAngles().y % 180 == 0) then
 			local pos = LocalPlayer():GetShootPos() + LocalPlayer():GetAimVector() * 64
 			local toscreen = pos:ToScreen()
