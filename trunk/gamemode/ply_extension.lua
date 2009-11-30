@@ -25,7 +25,7 @@ function meta:NormalizeKillerCookie( )
 end
 
 function meta:IsKillerEligible()
-	return GAMEMODE:GetGamemodeKillerCookie() == self:GetKillerCookie( )
+	return GAMEMODE:GetKillerCookie() == self:GetKillerCookie( )
 end
 
 
