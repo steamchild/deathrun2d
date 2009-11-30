@@ -12,15 +12,19 @@ function meta:GetKillerCookie( )
 	return GAMEMODE.Data.PlayerKillerCookie[self:UniqueID()] or 0
 end
 
+function meta:SetKillerCookie( iNum )
+	GAMEMODE.Data.PlayerKillerCookie[self:UniqueID()] = iNum
+end
+
 function meta:UpgradeKillerCookie( )
-	if GAMEMODE.Data.PlayerKillerCookie[self:UniqueID()] <= GAMEMODE:GetCurrentKillerCookie() then
-		GAMEMODE.Data.PlayerKillerCookie[self:UniqueID()] = GAMEMODE:GetCurrentKillerCookie() + 1
+	if self:GetKillerCookie() <= GAMEMODE:GetKillerCookie() then
+		self:SetKillerCookie( GAMEMODE:GetKillerCookie() + 1 )
 	end
 end
 
 function meta:NormalizeKillerCookie( )
-	if GAMEMODE.Data.PlayerKillerCookie[self:UniqueID()] < GAMEMODE:GetCurrentKillerCookie() then
-		GAMEMODE.Data.PlayerKillerCookie[self:UniqueID()] = GAMEMODE:GetCurrentKillerCookie()
+	if self:GetKillerCookie() < GAMEMODE:GetKillerCookie() then
+		self:SetKillerCookie( GAMEMODE:GetKillerCookie() )
 	end
 end
 
