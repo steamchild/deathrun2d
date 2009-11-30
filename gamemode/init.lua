@@ -82,7 +82,7 @@ function GM:GetKillerCookie( )
 end
 
 function GM:UpgradeKillerCookie( )
-	self.Data.KillerCookie = self:GetGamemodeKillerCookie() + 1
+	self.Data.KillerCookie = self:GetKillerCookie() + 1
 	
 	for k,ply in pairs(player.GetAll()) do
 		ply:NormalizeKillerCookie()
