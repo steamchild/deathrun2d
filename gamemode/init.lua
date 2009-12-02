@@ -115,6 +115,7 @@ function GM:SelectKillers( )
 	
 	if #eligibleplys == 0 then
 		self:UpgradeKillerCookie()
+		eligibleplys = players
 	end
 	
 	local playerPickCount = 0
